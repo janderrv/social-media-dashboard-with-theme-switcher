@@ -1,87 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | [Challenge Name Here]</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  Social Media Dashboard
-  Total Followers: 23,004
-
-  Dark Mode
-
-  
-
-  @nathanf
-  1987
-  Followers
-  12 Today
-
-  @nathanf
-  1044
-  Followers
-  99 Today
-
-  @realnathanf
-  11k
-  Followers
-  1099 Today
-
-  Nathan F.
-  8239
-  Subscribers
-  144 Today
-
-
-
-  Overview - Today
-
-  Page Views
-  87
-  3%
-
-  Likes
-  52
-  2%
-
-  Likes
-  5462
-  2257%
-
-  Profile Views
-  52k
-  1375%
-
-  Retweets
-  117
-  303%
-
-  Likes
-  507
-  553%
-
-  Likes
-  107
-  19%
-
-  Total Views
-  1407
-  12%
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <title>Frontend Mentor | [Challenge Name Here]</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="title">Social Media Dashboard</h1>
+      <p class="total-followers">Total Followers: 23,004</p>
+      <div class="dark-mode">
+        <h4>Dark Mode</h4>
+        <button class="switch"></button>
+      </div>    
+    </header>
+    <main>
+      <div class="top">
+        <div class="card card-facebook">
+          <div class="social-logo">
+            <img src="/images/icon-facebook.svg" alt="Facebook" />
+          </div>
+          <p class="username">
+            @nathanf
+          </p>
+          <div class="counters">
+            1987 Followers
+          </div>
+            <p class="new-today">
+              12 Today
+            </p>
+        </div>
+        <div class="card card-twitter">
+          <div class="social-logo">
+            <img src="/images/icon-twitter.svg" alt="Twitter" />
+          </div>
+          <p class="username">
+            @nathanf
+          </p>
+          <div class="counters">
+            <div class="numbers">
+              1044
+            </div>
+            <p>Followers</p> 
+          </div>
+            <p class="new-today">
+              99 Today
+            </p>
+        </div>
+        <div class="card card-instagram">
+          <div class="social-logo">
+            <img src="/images/icon-instagram.svg" alt="Instagram" />
+          </div>
+          <p class="username">
+            @realnathanf
+          </p>
+          <div class="counters">
+            <div class="numbers">
+              11k
+            </div>
+            <p>Followers</p> 
+          </div>
+            <p class="new-today">
+              1099 Today
+            </p>
+        </div>
+        <div class="card card-youtube">
+          <div class="social-logo">
+            <img src="/images/icon-youtube.svg" alt="Youtube" />
+          </div>
+          <p class="username">
+            Nathan F.
+          </p>
+          <div class="counters">
+            <div class="numbers">
+              8239 
+            </div>
+            <p>Subscribers</p>  
+          </div>
+            <p class="new-today">
+              144 Today
+            </p>
+        </div>
+      </div>
+      <div class="bottom">
+        <h2>Overview - Today</h2>
+        <div class="l-card l-card-facebook">
+          <p>Page Views</p>
+          <div class="social-logo">
+            <img src="/images/icon-facebook.svg" alt="Facebook" />
+          </div>
+          <div class="l-numbers">
+            87
+          </div>
+          <div class="l-new-today">
+            3%
+          </div>  
+        </div>
+        <div class="l-card l-card-facebook">
+          <p>Likes</p>
+          <div class="social-logo">
+            <img src="/images/icon-facebook.svg" alt="Facebook" />
+          </div>
+          <div class="l-numbers">
+            52
+          </div>
+          <div class="l-new-today">
+            2%
+          </div>
+        </div>
+        <div class="l-card l-card-instagram">
+          <p>Likes</p>
+          <div class="social-logo">
+            <img src="/images/icon-instagram.svg" alt="Instagram" />
+          </div>
+          <div class="l-numbers">
+            5462
+          </div>
+          <div class="l-new-today">
+            2257%
+          </div>
+        </div>
+        <div class="l-card l-card-instagram">
+          <p>Profile Views</p>
+          <div class="social-logo">
+            <img src="/images/icon-instagram.svg" alt="Instagram" />
+          </div>
+          <div class="l-numbers">
+            52k
+          </div>
+          <div class="l-new-today">
+            1375%
+          </div>   
+        </div>
+        <div class="l-card l-card-twitter">
+          <p>Retweets</p>
+          <div class="card card-twitter">
+            <div class="social-logo">
+              <img src="/images/icon-twitter.svg" alt="Twitter" />
+            </div>
+            <div class="l-numbers">
+              117
+            </div>
+            <div class="l-new-today">
+              303%
+            </div>  
+        </div>
+        <div class="l-card l-card-twitter">
+          <p>Likes</p>
+          <div class="card card-twitter">
+            <div class="social-logo">
+              <img src="/images/icon-twitter.svg" alt="Twitter" />
+            </div>
+            <div class="l-numbers">
+              507
+            </div>
+            <div class="l-new-today">
+              553%
+            </div>   
+        </div>
+        <div class="l-card l-card-youtube">
+          <p>Likes</p>
+          <div class="social-logo">
+            <img src="/images/icon-youtube.svg" alt="Youtube" />
+          </div>
+          <div class="l-numbers">
+            107
+          </div>
+          <div class="l-new-today">
+            19%
+          </div>
+        </div>
+        <div class="l-card l-card-youtube">
+          <p>Total Views</p>
+          <div class="social-logo">
+            <img src="/images/icon-youtube.svg" alt="Youtube" />
+          </div>
+          <div class="l-counters">
+            <div class="l-numbers">
+              1407
+            </div>
+            <div class="l-new-today">
+              12% 
+            </div>
+          </div> 
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
